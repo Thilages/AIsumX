@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/images/back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.hero {
+  backdrop-filter: blur(10px);
+}
+
+.shadow {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+    6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(112, 109, 109);
+  opacity: 20%;
+  color: black;
+}
+
+.textbox:focus{
+  border:white;
+  outline: none
+}
+
+.animation {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image {
+  fill: white;
+}
+
+.drop-down {
+  display: none;
+}
